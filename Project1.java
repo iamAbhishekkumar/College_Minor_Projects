@@ -4,7 +4,7 @@
 //Section : R
 package com.company;
 import java.util.*;
-public class full_working_model {
+public class code_encryption {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -49,11 +49,7 @@ public class full_working_model {
             String final_msg = "";
 
             //for finding number of broken parts of message
-            int i1 = msg.length() % pin_str.length();
-            int i2 = msg.length()/pin_str.length();
-            if(i1 ==0)
-                part = i2;
-            else part = i1 + i2;
+            part = msg.length()/pin_str.length() + msg.length() % pin_str.length();
 
 
             for(int p = 0;p<=part;p++){
